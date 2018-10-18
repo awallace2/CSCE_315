@@ -1,25 +1,11 @@
-README:
+For this programming assignment we were tasked to create a database system using a parser generator to interpret queries for our system. We created our own 'grammar' for the parser generator, which creates a parse tree of our commands and using a listener and walker, traverses this parse tree and calls our DB engine backend to edit our database.
 
-For Part 2:
+Our grammar is located in project_2.g4
+The listener and walker are located in Myproject_2BaseListener.java
 
-To execute the program make sure you are in the correct directory and type the following
+The program takes an input file containing the queries as a command line argument, then executes them line by line.
 
-“java -cp “.:./antlr-4.7.1-complete.jar” *.java”
-“java -cp “.:./antlr-4.7.1-complete.jar” project2Main < input.txt”
-
-
-The output file is named “mainOutput.txt”. The “input.txt” portion of the command line entries that executer the code is subject to your discretion. Please use the name of the file you would like the program to parse. 
-
-For Part 3:
-
-The file titled TableTest.java contains our main method to run. It has a pre-written main that test the functions contained in the file Table.java. The files must both be in the same directory. You can run it by entering the following commands in the command line:
-
-"javac Table.java"
-"TableTest.java"
-
-For Part 4:
-
-Our input file for running the animals example is called input.txt. To run the program, simply execute the following commands:
+The input file for running is called input.txt. To run the program, simply execute the following commands:
 
 "javac myproject2Main.java"
 "java myproject2Main < input.txt"
